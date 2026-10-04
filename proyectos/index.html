@@ -1,0 +1,11 @@
+---
+layout: page
+ref: projects
+title: Proyectos
+kicker: "~/cuaderno/proyectos"
+lede: Lo que he construido o estoy construyendo, por área.
+---
+{%- assign projects = site.projects | where: "lang", page.lang | sort: "order" -%}
+<div class="entries">
+  {%- for p in projects -%}{% include project-card.html project=p %}{%- endfor -%}
+</div>

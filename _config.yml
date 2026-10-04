@@ -1,0 +1,40 @@
+title: "Cuaderno de Adolfo"
+author: "Adolfo J. Cardozo S."
+description: "Proyectos personales de Adolfo J. Cardozo S.: software, electrónica, música, aire libre y aprendizaje."
+url: "https://acardozos.github.io"
+baseurl: ""
+github_username: acardozos
+lang: es
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default, lang: es }
+  - scope: { path: "en" }
+    values: { lang: en }
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+  - scope: { path: "_projects/en", type: projects }
+    values: { lang: en }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "_posts/en", type: posts }
+    values: { lang: en }
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

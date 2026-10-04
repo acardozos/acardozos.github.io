@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<article class="wrap page">
+  <a class="back mono" href="{{ t.log_url | relative_url }}">{% include icon.html name="back" %}{{ t.back_log }}</a>
+  <header class="page-head">
+    <p class="kicker mono"><time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date %}</time>{% if page.area %} · {% include area-chip.html area=page.area %}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>
