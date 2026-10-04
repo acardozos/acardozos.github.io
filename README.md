@@ -1,10 +1,10 @@
-# Cuaderno de Adolfo · acardozos.github.io
+# Cuaderno de Adolfo · fitocardozo.com
 
 Sitio personal bilingüe (ES/EN) con proyectos no profesionales: software, electrónica, música, aire libre, aprendizaje y más. Construido con Jekyll, el generador nativo de GitHub Pages.
 
 ## Publicar
 
-En **Settings → Pages** del repositorio, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`. GitHub construye el sitio solo en cada push a `main` y lo sirve en <https://acardozos.github.io>.
+En **Settings → Pages** del repositorio, elige *Deploy from a branch*, rama `main`, carpeta `/ (root)`. GitHub construye el sitio solo en cada push a `main` y lo sirve en <https://fitocardozo.com>.
 
 ## Añadir contenido
 
