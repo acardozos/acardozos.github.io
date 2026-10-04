@@ -37,6 +37,7 @@ es:
     paused: en pausa
     done: terminado
     idea: idea
+    planned: planificado
 en:
   locale: en_US
   home: /en/
@@ -75,3 +76,4 @@ en:
     paused: paused
     done: done
     idea: idea
+    planned: planned
