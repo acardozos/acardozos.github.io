@@ -2,9 +2,11 @@
 <footer class="site-footer">
   <div class="wrap footer-row">
     <p class="footer-note">{{ t.footer_note }}</p>
-    <p class="mono small">
-      <a href="https://github.com/{{ site.github_username }}">{% include icon.html name="github" %} github.com/{{ site.github_username }}</a>
-    </p>
+    <ul class="footer-links mono small">
+      {%- for l in site.data.profile.links -%}
+      <li><a href="{{ l.url }}">{% include icon.html name=l.icon %} {{ l.label }}</a></li>
+      {%- endfor -%}
+    </ul>
     <p class="mono small muted">© {{ site.time | date: "%Y" }} {{ site.author }} · {{ t.made_with }}</p>
   </div>
 </footer>

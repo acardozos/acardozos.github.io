@@ -31,7 +31,7 @@ Texto en Markdown…
 
 **Una entrada de bitácora** → `_posts/es/AAAA-MM-DD-titulo.md` y `_posts/en/AAAA-MM-DD-title.md` con `title`, `ref`, `permalink` (`/bitacora/...` o `/en/log/...`) y opcionalmente `area`.
 
-**Áreas** → `_data/areas.yml`. **Textos de la interfaz** → `_data/i18n.yml`. **Colores y tipografía** → variables al inicio de `assets/css/main.css`.
+**Foto, ubicación y enlaces** → `_data/profile.yml` (la foto va en `assets/img/`). **Áreas** → `_data/areas.yml`. **Textos de la interfaz** → `_data/i18n.yml`. **Colores y tipografía** → variables al inicio de `assets/css/main.css`.
 
 ## Probar en local
 
