@@ -1,0 +1,25 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- if page.lang == "en" -%}{%- assign other = "es" -%}{%- else -%}{%- assign other = "en" -%}{%- endif -%}
+{%- assign alt_url = site.data.i18n[other].home -%}
+{%- if page.ref -%}
+  {%- assign docs = site.pages | concat: site.projects | concat: site.posts -%}
+  {%- assign alt = docs | where: "ref", page.ref | where: "lang", other | first -%}
+  {%- if alt -%}{%- assign alt_url = alt.url -%}{%- endif -%}
+{%- endif -%}
+<a class="skip" href="#main">{{ t.skip }}</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{{ t.home | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">AJ</span>
+      <span class="brand-name">{{ site.author }}</span>
+    </a>
+    <nav class="nav" aria-label="{% if page.lang == 'en' %}Main{% else %}Principal{% endif %}">
+      <a href="{{ t.home | relative_url }}#areas">{{ t.nav_areas }}</a>
+      <a href="{{ t.projects_url | relative_url }}"{% if page.url contains t.projects_url %} aria-current="page"{% endif %}>{{ t.nav_projects }}</a>
+      <a href="{{ t.log_url | relative_url }}"{% if page.url contains t.log_url %} aria-current="page"{% endif %}>{{ t.nav_log }}</a>
+      <a class="lang-switch" href="{{ alt_url | relative_url }}" hreflang="{{ other }}" lang="{{ other }}" title="{{ t.switch_label }}">
+        {% include icon.html name="globe" %}<span aria-hidden="true">{{ t.switch_short }}</span><span class="sr-only">{{ t.switch_label }}</span>
+      </a>
+    </nav>
+  </div>
+</header>

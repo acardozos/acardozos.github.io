@@ -1,0 +1,13 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign p = include.project -%}
+{%- assign a = site.data.areas | where: "id", p.area | first -%}
+<article class="entry" style="--accent: var(--c-{{ a.color | default: 'lime' }})">
+  <div class="entry-meta mono">
+    {% include area-chip.html area=p.area %}
+    {% if p.status %}<span class="status status-{{ p.status }}">{{ t.statuses[p.status] }}</span>{% endif %}
+    {% if p.year %}<span class="muted">{{ p.year }}</span>{% endif %}
+  </div>
+  <h3 class="entry-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+  <p>{{ p.summary }}</p>
+  {% if p.stack %}<ul class="tags mono" aria-label="{{ t.stack }}">{% for s in p.stack %}<li>{{ s }}</li>{% endfor %}</ul>{% endif %}
+</article>

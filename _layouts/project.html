@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign a = site.data.areas | where: "id", page.area | first -%}
+<article class="wrap page" style="--accent: var(--c-{{ a.color | default: 'lime' }})">
+  <a class="back mono" href="{{ t.projects_url | relative_url }}">{% include icon.html name="back" %}{{ t.back_projects }}</a>
+  <header class="page-head project-head">
+    <div class="entry-meta mono">
+      {% include area-chip.html area=page.area %}
+      {% if page.status %}<span class="status status-{{ page.status }}">{{ t.statuses[page.status] }}</span>{% endif %}
+      {% if page.year %}<span class="muted">{{ page.year }}</span>{% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    <div class="actions">
+      {% if page.repo %}<a class="btn" href="{{ page.repo }}">{% include icon.html name="github" %}{{ t.repo }}</a>{% endif %}
+      {% if page.demo %}<a class="btn btn-ghost" href="{{ page.demo }}">{% include icon.html name="arrow" %}{{ t.demo }}</a>{% endif %}
+    </div>
+  </header>
+  <div class="project-body">
+    <div class="prose">{{ content }}</div>
+    {% if page.stack %}
+    <aside class="sidecard">
+      <h2 class="mono small">{{ t.stack }}</h2>
+      <ul class="tags mono">{% for s in page.stack %}<li>{{ s }}</li>{% endfor %}</ul>
+    </aside>
+    {% endif %}
+  </div>
+</article>

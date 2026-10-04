@@ -1,0 +1,31 @@
+# Áreas del cuaderno. "color" es una de las variables --c-* de assets/css/main.css.
+- id: software
+  color: lime
+  icon: code
+  es: { name: Software, desc: "Aplicaciones y herramientas propias que resuelven problemas reales y pequeños." }
+  en: { name: Software, desc: "My own apps and tools that solve small, real problems." }
+- id: maker
+  color: orange
+  icon: chip
+  es: { name: Electrónica y maker, desc: "Circuitos, microcontroladores y cosas que se sueldan, se atornillan o se imprimen." }
+  en: { name: Electronics & making, desc: "Circuits, microcontrollers and things that get soldered, screwed or printed." }
+- id: music
+  color: pink
+  icon: wave
+  es: { name: Música y audio, desc: "Sonido, instrumentos y la técnica que hay detrás de lo que escuchamos." }
+  en: { name: Music & audio, desc: "Sound, instruments and the craft behind what we hear." }
+- id: outdoor
+  color: cyan
+  icon: peak
+  es: { name: Deporte y aire libre, desc: "Moverse, salir y medir el camino. El cuerpo también es un proyecto." }
+  en: { name: Sport & outdoors, desc: "Moving, getting out and measuring the trail. The body is a project too." }
+- id: learning
+  color: yellow
+  icon: book
+  es: { name: Aprender y enseñar, desc: "Autoaprendizaje y didáctica: entender algo a fondo y luego explicarlo bien." }
+  en: { name: Learning & teaching, desc: "Self-learning and teaching: understand something deeply, then explain it well." }
+- id: more
+  color: violet
+  icon: plus
+  es: { name: Y mucho más, desc: "Lo que la curiosidad traiga la semana que viene." }
+  en: { name: And much more, desc: "Whatever curiosity brings next week." }

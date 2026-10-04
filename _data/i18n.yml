@@ -1,0 +1,77 @@
+# Textos de la interfaz en cada idioma.
+es:
+  locale: es_ES
+  home: /
+  projects_url: /proyectos/
+  log_url: /bitacora/
+  nav_projects: Proyectos
+  nav_log: Bitácora
+  nav_areas: Áreas
+  skip: Saltar al contenido
+  switch_label: Read in English
+  switch_short: EN
+  areas_title: Lo que me ocupa
+  areas_lede: Cosas que hago por gusto, sin horario ni cliente. Cada color es un área del cuaderno.
+  projects_title: Proyectos
+  projects_lede: Lo que he construido o estoy construyendo.
+  log_title: Bitácora
+  log_lede: Notas de avance, aprendizajes y cosas que encuentro en el camino.
+  all_projects: Ver todos los proyectos
+  all_log: Ver toda la bitácora
+  status: Estado
+  stack: Herramientas
+  repo: Código fuente
+  demo: Ver en vivo
+  back_projects: Volver a proyectos
+  back_log: Volver a la bitácora
+  projects_count_one: proyecto
+  projects_count_many: proyectos
+  soon: próximamente
+  read: Leer
+  empty: Todavía no hay entradas aquí. Pronto.
+  footer_note: Un cuaderno abierto de proyectos personales.
+  made_with: Hecho con Jekyll y alojado en GitHub Pages.
+  date_months: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+  statuses:
+    active: en marcha
+    paused: en pausa
+    done: terminado
+    idea: idea
+en:
+  locale: en_US
+  home: /en/
+  projects_url: /en/projects/
+  log_url: /en/log/
+  nav_projects: Projects
+  nav_log: Log
+  nav_areas: Areas
+  skip: Skip to content
+  switch_label: Leer en español
+  switch_short: ES
+  areas_title: What keeps me busy
+  areas_lede: Things I do for the joy of it, no schedule, no client. Each colour is a section of the notebook.
+  projects_title: Projects
+  projects_lede: What I have built or am building.
+  log_title: Log
+  log_lede: Progress notes, lessons learned and things I find along the way.
+  all_projects: See all projects
+  all_log: See the full log
+  status: Status
+  stack: Tools
+  repo: Source code
+  demo: See it live
+  back_projects: Back to projects
+  back_log: Back to the log
+  projects_count_one: project
+  projects_count_many: projects
+  soon: coming soon
+  read: Read
+  empty: No entries here yet. Soon.
+  footer_note: An open notebook of personal projects.
+  made_with: Built with Jekyll and hosted on GitHub Pages.
+  date_months: [January, February, March, April, May, June, July, August, September, October, November, December]
+  statuses:
+    active: in progress
+    paused: paused
+    done: done
+    idea: idea
