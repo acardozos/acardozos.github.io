@@ -1,0 +1,16 @@
+# Datos de la ficha personal que aparece en la portada.
+
+# Foto: guarda la imagen en assets/img/ (cuadrada, unos 800×800 px) y pon aquí su ruta,
+# por ejemplo: /assets/img/fito.jpg. Si se deja vacía, se muestra el monograma.
+photo: ""
+nickname: Fito
+location:
+  es: Ciudadano del mundo
+  en: Citizen of the world
+
+# Enlaces (aparecen en la ficha y en el pie de página).
+# icon: github | youtube | strava | music | mail | link
+links:
+  - label: GitHub
+    url: https://github.com/acardozos
+    icon: github

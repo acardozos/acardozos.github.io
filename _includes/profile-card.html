@@ -1,0 +1,21 @@
+{%- assign pr = site.data.profile -%}
+<aside class="profile" aria-label="{% if page.lang == 'en' %}About me{% else %}Sobre mí{% endif %}">
+  <figure class="polaroid">
+    {%- if pr.photo != "" -%}
+    <img src="{{ pr.photo | relative_url }}" alt="{% if page.lang == 'en' %}Photo of{% else %}Foto de{% endif %} {{ site.author }}" width="400" height="400">
+    {%- else -%}
+    <div class="monogram" aria-hidden="true">{{ pr.nickname }}</div>
+    {%- endif -%}
+    <figcaption class="mono">{{ site.author }}<br><span>aka {{ pr.nickname }}</span></figcaption>
+  </figure>
+  <ul class="profile-meta mono">
+    <li>{% include icon.html name="pin" %}{{ pr.location[page.lang] }}</li>
+  </ul>
+  {%- if pr.links.size > 0 -%}
+  <ul class="profile-links">
+    {%- for l in pr.links -%}
+    <li><a href="{{ l.url }}" rel="me">{% include icon.html name=l.icon %}<span>{{ l.label }}</span></a></li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+</aside>
