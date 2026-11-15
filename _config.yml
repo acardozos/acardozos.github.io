@@ -21,7 +21,7 @@ collections:
 
 defaults:
   - scope: { path: "" }
-    values: { layout: default, lang: es }
+    values: { layout: default, lang: es, image: /assets/img/fito.jpg }  # image: vista previa al compartir enlaces
   - scope: { path: "en" }
     values: { lang: en }
   - scope: { path: "", type: projects }

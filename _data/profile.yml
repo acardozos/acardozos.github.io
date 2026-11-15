@@ -2,7 +2,7 @@
 
 # Foto: guarda la imagen en assets/img/ (cuadrada, unos 800×800 px) y pon aquí su ruta,
 # por ejemplo: /assets/img/fito.jpg. Si se deja vacía, se muestra el monograma.
-photo: ""
+photo: /assets/img/fito.webp
 nickname: Fito
 location:
   es: Ciudadano del mundo
